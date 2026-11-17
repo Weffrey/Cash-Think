@@ -1,4 +1,4 @@
-# Daily Quant Trader
+# Cash in Cash out
 
 A personal trainer for quant trading and finance interview questions. It keeps your completed questions even across 12 categories, serves questions at the difficulty you choose, and breaks every solution down into short answer, steps, theory, and intuition.
 
