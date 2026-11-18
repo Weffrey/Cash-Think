@@ -1,8 +1,27 @@
-# Cash in Cash out
+# Money Trainer
 
-A personal trainer for quant trading and finance interview questions. It keeps your completed questions even across 12 categories, serves questions at the difficulty you choose, and breaks every solution down into short answer, steps, theory, and intuition.
+Queue Cash In Cash Out.
 
-It is a single-user app with no login. Data lives in a local SQLite file.
+This project is motivated by me wanting to use my transit times better while also learning about finance related probability and brain teasers with varying difficulties. 
+
+Flow:
+Trainer chooses a random question based off of question completion ratio (ex. if you've solved 3 probability question and only 2 macroeconomics question, next question will be a macroeconomics question)
+- Ratios can be weighted differently; In the settings you can adjust preferences if you want one subject more than the other -> adjusts question ratio weight
+
+Questions divide into mcq and long answer (more to be added)
+- Long answer questions for questions that need explanation
+- MCQ for more basic calculation questions
+==> (To be added) Within each question, there will be a space to serve as a workspace for the user to provide their solution. Upon submitting their solution, a trained Groq API will read and evaluate your answer
+==> The chatbox will also be scanned upon request for hints, Groq will explain correct/incorrect thought processes and give the user a hint based of their current work
+
+User can save/favorite certain questions
+
+Each question has an associated difficulty value (average problem difficulty can be changed in settings by user) as well as the option to upgrade the question difficulty.
+
+Theory based questions will have a reference section that explains the theory needed to solve the problem (Need to add more information on nicher finance related terms.)
+
+
+Haven't made a server for this yet and haven't included the ai features (upgrade/ai chat feature)
 
 ## Run it
 
